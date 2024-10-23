@@ -5,12 +5,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Spring xml configuration program
- *
  */
-public class App 
-{
-    public static void main( String[] args ){
+public class App {
+    public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
-
+        Emp emp = (Emp) context.getBean("emp");
     }
 }
